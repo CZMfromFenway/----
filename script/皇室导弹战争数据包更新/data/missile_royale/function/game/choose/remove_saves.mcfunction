@@ -1,0 +1,26 @@
+#清空玩家保存的卡组
+
+tag @s remove snowball
+tag @s remove arrow
+tag @s remove trident
+tag @s remove spectral_arrow
+tag @s remove ender_pearl
+tag @s remove blaze_spawn_egg
+
+tag @s remove guardian_spawn_egg
+tag @s remove creeper_spawn_egg
+tag @s remove ghast_spawn_egg
+tag @s remove witch_spawn_egg
+tag @s remove ocelot_spawn_egg
+
+tag @s remove wither_skeleton_spawn_egg
+tag @s remove parrot_spawn_egg
+tag @s remove squid_spawn_egg
+tag @s remove phantom_spawn_egg
+
+tag @s remove iron_golem_spawn_egg
+tag @s remove spider_spawn_egg
+tag @s remove cave_spider_spawn_egg
+tag @s remove zombified_piglin_spawn_egg
+tag @s remove magma_cube_spawn_egg
+tag @s remove silverfish_spawn_egg

@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "item",
+          "name": "ghast_spawn_egg"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:reference",
+      "name": "missile_wars:item/green_items",
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "green"
+          }
+        }
+      ]
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "missile_wars:item/orange_items",
+      "conditions": [
+        {
+          "condition": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "team": "orange"
+          }
+        }
+      ]
+    }
+  ]
+}

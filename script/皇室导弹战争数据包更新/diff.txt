@@ -1,0 +1,126 @@
+数据包差异报告
+新旧目录对比:
+  新: data
+  旧: D:\czm我的世界\.minecraft\versions\1.21-Fabric 0.15.11\saves\Missile Wars\datapacks\Missile Wars Fusion for 1.21\data
+
+✅ 文件相同: missile_royale\function\game\tp.mcfunction
+✅ 文件相同: missile_royale\function\game\choose\previous_cards.mcfunction
+✅ 文件相同: missile_royale\function\game\choose\remove_saves.mcfunction
+✅ 文件相同: missile_royale\function\game\choose\save_cards.mcfunction
+✅ 文件相同: missile_royale\function\game\cost\remove.mcfunction
+❌ 文件不同: missile_royale\function\game\deal\deal.mcfunction
+差异详情:
+--- D:\czm我的世界\.minecraft\versions\1.21-Fabric 0.15.11\saves\Missile Wars\datapacks\Missile Wars Fusion for 1.21\data\missile_royale\function\game\deal\deal.mcfunction+++ data\missile_royale\function\game\deal\deal.mcfunction@@ -2,6 +2,7 @@ 
+ #分发新卡
+ 
++loot give @s[team=!,tag=silverfish_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/silverfish_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ 
+ loot give @s[team=!,tag=arrow] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/arrow",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=ender_pearl] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/ender_pearl",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+@@ -10,22 +11,22 @@ loot give @s[team=!,tag=blaze_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/blaze_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=spectral_arrow] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/spectral_arrow",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ 
+-loot give @s[team=!,tag=magma_cube_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/magma_cube_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+-loot give @s[team=!,tag=cave_spider_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/cave_spider_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+-loot give @s[team=!,tag=iron_golem_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/iron_golem_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+-loot give @s[team=!,tag=spider_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/spider_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+-loot give @s[team=!,tag=zombified_piglin_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/zombified_piglin_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+-
+ loot give @s[team=!,tag=guardian_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/guardian_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=creeper_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/creeper_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=ocelot_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/ocelot_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=witch_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/witch_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=ghast_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/ghast_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ 
+-loot give @s[team=!,tag=silverfish_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/silverfish_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+-loot give @s[team=!,tag=squid_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/squid_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=wither_skeleton_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/wither_skeleton_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ loot give @s[team=!,tag=parrot_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/parrot_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
++
++loot give @s[team=!,tag=squid_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/squid_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
++
++loot give @s[team=!,tag=magma_cube_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/magma_cube_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
++loot give @s[team=!,tag=cave_spider_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/cave_spider_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
++loot give @s[team=!,tag=iron_golem_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/iron_golem_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
++loot give @s[team=!,tag=spider_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/spider_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
++loot give @s[team=!,tag=zombified_piglin_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/zombified_piglin_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+ 
+ clear @s[team=!,level=0] #missile_royale:above/above0
+ clear @s[team=!,level=1] #missile_royale:above/above1
+
+================================================================================
+✅ 文件相同: missile_royale\function\initiate\initiation.mcfunction
+✅ 文件相同: missile_royale\item_modifier\cards.json
+✅ 文件相同: missile_royale\tags\item\cost\10cost.json
+✅ 文件相同: missile_royale\tags\item\cost\1cost.json
+✅ 文件相同: missile_royale\tags\item\cost\2cost.json
+✅ 文件相同: missile_royale\tags\item\cost\3cost.json
+✅ 文件相同: missile_royale\tags\item\cost\4cost.json
+✅ 文件相同: missile_royale\tags\item\cost\5cost.json
+✅ 文件相同: missile_royale\tags\item\cost\6cost.json
+✅ 文件相同: missile_royale\tags\item\cost\7cost.json
+✅ 文件相同: missile_royale\tags\item\cost\8cost.json
+✅ 文件相同: missile_royale\tags\item\cost\9cost.json
+❌ 文件不同: missile_wars\item_modifier\item\green_items.json
+差异详情:
+--- D:\czm我的世界\.minecraft\versions\1.21-Fabric 0.15.11\saves\Missile Wars\datapacks\Missile Wars Fusion for 1.21\data\missile_wars\item_modifier\item\green_items.json+++ data\missile_wars\item_modifier\item\green_items.json@@ -770,14 +770,6 @@             "italic": false
+           }
+         ]
+-      },
+-      {
+-        "function": "minecraft:set_components",
+-        "components": {
+-          "enchantments": {
+-            "missile_wars:platform_trident": 1
+-          }
+-        }
+       }
+     ]
+   },
+
+================================================================================
+❌ 文件不同: missile_wars\item_modifier\item\orange_items.json
+差异详情:
+--- D:\czm我的世界\.minecraft\versions\1.21-Fabric 0.15.11\saves\Missile Wars\datapacks\Missile Wars Fusion for 1.21\data\missile_wars\item_modifier\item\orange_items.json+++ data\missile_wars\item_modifier\item\orange_items.json@@ -770,14 +770,6 @@             "italic": false
+           }
+         ]
+-      },
+-      {
+-        "function": "minecraft:set_components",
+-        "components": {
+-          "enchantments": {
+-            "missile_wars:platform_trident": 1
+-          }
+-        }
+       }
+     ]
+   },
+
+================================================================================
+✅ 文件相同: missile_wars\item_modifier\text\help_defensive_items.json
+✅ 文件相同: missile_wars\item_modifier\text\help_missiles.json
+✅ 文件相同: missile_wars\loot_table\items\arrow.json
+✅ 文件相同: missile_wars\loot_table\items\blaze_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\cave_spider_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\creeper_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\ender_pearl.json
+✅ 文件相同: missile_wars\loot_table\items\ghast_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\guardian_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\iron_golem_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\magma_cube_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\ocelot_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\parrot_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\silverfish_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\snowball.json
+✅ 文件相同: missile_wars\loot_table\items\spectral_arrow.json
+✅ 文件相同: missile_wars\loot_table\items\spider_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\squid_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\trident.json
+✅ 文件相同: missile_wars\loot_table\items\witch_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\wither_skeleton_spawn_egg.json
+✅ 文件相同: missile_wars\loot_table\items\zombified_piglin_spawn_egg.json
+
+比较结果摘要:
+  总文件数: 42
+  相同文件: 39
+  不同文件: 3

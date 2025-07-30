@@ -1,0 +1,752 @@
+[
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/1cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "1费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/2cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "2费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/3cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "3费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/4cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "4费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/5cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "5费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/6cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "6费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/7cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "7费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/8cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "8费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/9cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "9费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "#missile_royale:cost/10cost"
+    },
+    "modifier": {
+      "function": "set_lore",
+      "mode": "replace_section",
+      "offset": 0,
+      "lore": [
+        {
+          "text": "10费",
+          "color": "gray"
+        }
+      ]
+    }
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "guardian_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "娄金狗导弹",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "弹药少，不怕箭矢和火球",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "ocelot_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "箕水豹导弹",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "移速极快的轻型导弹",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "witch_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "氐土貉导弹",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "盾牌摧毁者",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "creeper_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "奎木狼导弹",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "弹药前置，身形纤细",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "ghast_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "尾火虎导弹",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "破坏性巨大的霸主",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "iron_golem_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "沙皇导弹",
+            "italic": false,
+            "color": "dark_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "坚不可摧的核弹头",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "zombified_piglin_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "柄雷导弹",
+            "italic": false,
+            "color": "dark_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "穿甲铁御且高爆",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "magma_cube_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "炎狱导弹",
+            "italic": false,
+            "color": "dark_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "破盾的纤细导弹",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "spider_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "东风导弹",
+            "italic": false,
+            "color": "dark_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "移速极快，威力巨大",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "cave_spider_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "匕首导弹",
+            "italic": false,
+            "color": "dark_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "小型高速，弹药前置",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "wither_skeleton_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "天启导弹",
+            "italic": false,
+            "color": "light_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "进军的速射坦克",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "parrot_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "仪凤导弹",
+            "italic": false,
+            "color": "light_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "超远射程的盾构机",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "squid_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "铺路机",
+            "italic": false,
+            "color": "light_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "缓慢铺设单向跑酷通道",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "blaze_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "火球",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "直线发射摧毁敌方导弹",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "snowball"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "盾",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "发射后一秒原地造盾",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "arrow"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "箭矢",
+            "italic": false,
+            "color": "dark_aqua"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "发射以点燃敌方导弹",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "spectral_arrow"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "光灵箭",
+            "italic": false,
+            "color": "light_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "击中目标后爆炸",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "trident"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "平台三叉戟",
+            "italic": false,
+            "color": "light_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "击中目标生成平台",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "ender_pearl"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "末影珍珠",
+            "italic": false,
+            "color": "light_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "传送到导弹上",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "filtered",
+    "item_filter": {
+      "items": "silverfish_spawn_egg"
+    },
+    "modifier": [
+      {
+        "function": "minecraft:set_name",
+        "name": [
+          {
+            "text": "拦截弹",
+            "italic": false,
+            "color": "light_purple"
+          }
+        ]
+      },
+      {
+        "function": "minecraft:set_lore",
+        "mode": "replace_section",
+        "offset": 1,
+        "lore": [
+          {
+            "text": "无弹药，随机停止",
+            "color": "white"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,357 @@
+{
+  "function": "set_written_book_pages",
+  "mode": "append",
+  "pages": [
+    [
+      "",
+      {
+        "text": "2 道具介绍\n\n",
+        "bold": true
+      },
+      {
+        "text": "2.1 防御性道具介绍",
+        "color": "dark_green"
+      },
+      "\n\n",
+      {
+        "text": "防御性道具分为",
+        "color": "black"
+      },
+      {
+        "text": "基础道具",
+        "color": "dark_aqua"
+      },
+      {
+        "text": "和",
+        "color": "black"
+      },
+      {
+        "text": "融合道具",
+        "color": "light_purple"
+      },
+      {
+        "text": "。在非皇室模式下前者会在防御性道具开启时定期分发，后者可以通过基础道具合成而来。\n\n",
+        "color": "black"
+      },
+      "在皇室模式下，所有防御性道具都可以被选择到卡组中。其具体介绍如下。"
+    ],
+    [
+      "",
+      {
+        "text": "火球",
+        "color": "dark_aqua"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "编号：",
+        "color": "gray"
+      },
+      {
+        "text": "64",
+        "color": "gray"
+      },
+      "\n",
+      {
+        "text": "怪物蛋/物品：",
+        "color": "black"
+      },
+      {
+        "text": "烈焰人",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n皇室模式费用：",
+        "color": "black"
+      },
+      {
+        "text": "4",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n非皇室模式合成配方：\n",
+        "color": "black"
+      },
+      {
+        "text": "无",
+        "color": "dark_purple"
+      },
+      "\n\n",
+      {
+        "text": "火球（Fireball）右键地面原地召唤火球，瞄准敌方导弹敲击火球即可将其发射。未开启火球防御时可以破坏地狱门。",
+        "color": "black"
+      }
+    ],
+    [
+      "",
+      {
+        "text": "盾",
+        "color": "dark_aqua"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "编号：",
+        "color": "gray"
+      },
+      {
+        "text": "无",
+        "color": "gray"
+      },
+      "\n",
+      {
+        "text": "怪物蛋/物品：",
+        "color": "black"
+      },
+      {
+        "text": "雪球",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n皇室模式费用：",
+        "color": "black"
+      },
+      {
+        "text": "3",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n非皇室模式合成配方：\n",
+        "color": "black"
+      },
+      {
+        "text": "无",
+        "color": "dark_purple"
+      },
+      "\n\n",
+      {
+        "text": "盾（Shield）投掷后1s在原地生成盾牌；在此改版中，投掷后撞击方块可立即原地生成盾牌。但是无法在靠近双方地狱门的地方生成盾牌。",
+        "color": "black"
+      }
+    ],
+    [
+      "",
+      {
+        "text": "箭矢",
+        "color": "dark_aqua"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "编号：",
+        "color": "gray"
+      },
+      {
+        "text": "无",
+        "color": "gray"
+      },
+      "\n",
+      {
+        "text": "怪物蛋/物品：",
+        "color": "black"
+      },
+      {
+        "text": "箭",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n皇室模式费用：",
+        "color": "black"
+      },
+      {
+        "text": "1",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n非皇室模式合成配方：\n",
+        "color": "black"
+      },
+      {
+        "text": "无",
+        "color": "dark_purple"
+      },
+      "\n\n",
+      {
+        "text": "箭矢配合玩家已有的火矢弓可发射火箭，用于引燃敌方导弹的TNT以进行拦截。",
+        "color": "black"
+      }
+    ],
+    [
+      "",
+      {
+        "text": "光灵箭",
+        "color": "light_purple"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "编号：",
+        "color": "gray"
+      },
+      {
+        "text": "无",
+        "color": "gray"
+      },
+      "\n",
+      {
+        "text": "怪物蛋/物品：",
+        "color": "black"
+      },
+      {
+        "text": "光灵箭",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n皇室模式费用：",
+        "color": "black"
+      },
+      {
+        "text": "5",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n非皇室模式合成配方：\n",
+        "color": "black"
+      },
+      {
+        "text": "火球+箭矢",
+        "color": "dark_purple"
+      },
+      "\n\n",
+      {
+        "text": "爆裂光灵箭（Spectral arrow）发射后击中方块即产生爆炸，在敌方平台附近无效。",
+        "color": "black"
+      }
+    ],
+    [
+      "",
+      {
+        "text": "平台三叉戟",
+        "color": "light_purple"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "编号：",
+        "color": "gray"
+      },
+      {
+        "text": "无",
+        "color": "gray"
+      },
+      "\n",
+      {
+        "text": "怪物蛋/物品：",
+        "color": "black"
+      },
+      {
+        "text": "三叉戟",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n皇室模式费用：",
+        "color": "black"
+      },
+      {
+        "text": "4",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n非皇室模式合成配方：\n",
+        "color": "black"
+      },
+      {
+        "text": "盾+箭矢",
+        "color": "dark_purple"
+      },
+      "\n\n",
+      {
+        "text": "平台三叉戟（Platform trident）发射后击中方块则在原地生成平台，在敌方地狱门附近无效。",
+        "color": "black"
+      }
+    ],
+    [
+      "",
+      {
+        "text": "末影珍珠",
+        "color": "light_purple"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "\n",
+        "color": "black"
+      },
+      {
+        "text": "编号：",
+        "color": "gray"
+      },
+      {
+        "text": "无",
+        "color": "gray"
+      },
+      "\n",
+      {
+        "text": "怪物蛋/物品：",
+        "color": "black"
+      },
+      {
+        "text": "末影珍珠",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n皇室模式费用：",
+        "color": "black"
+      },
+      {
+        "text": "2",
+        "color": "dark_green"
+      },
+      {
+        "text": "\n非皇室模式合成配方：\n",
+        "color": "black"
+      },
+      {
+        "text": "火球+盾",
+        "color": "dark_purple"
+      },
+      "\n\n",
+      {
+        "text": "末影珍珠（Ender pearl）发射以传送到导弹上，无法直接传送到敌方平台上。",
+        "color": "black"
+      }
+    ]
+  ]
+}
