@@ -3,7 +3,7 @@
 # 配置
 MAIN_REPO="D:\czm我的世界\.minecraft\versions\1.21-Fabric 0.15.11\saves\Missile Wars\datapacks\Missile Wars Fusion for 1.21"
 HIGH_REPO="D:\czm我的世界\.minecraft\versions\1.21.8-Fabric 0.16.14\saves\Missile Wars 1_21_8\datapacks\Missile Wars Fusion for 1.21.8"
-CONVERT_SCRIPT="D:\czm我的世界\数据包\导弹战争\script\updator.py"
+CONVERT_SCRIPT="D:\czm我的世界\数据包\Missile Wars\script\updator.py"
 
 cd "$MAIN_REPO"
 
