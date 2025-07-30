@@ -3,7 +3,7 @@
 
 # ===== 配置区域 =====
 # 版本信息
-VERSION="1.2 pre-2"
+VERSION="1.2 pre-3"
 LOW_VERSION="1.21"
 HIGH_VERSION="1.21.5-1.21.8"
 
