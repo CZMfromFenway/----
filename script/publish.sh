@@ -15,7 +15,7 @@ LOW_REPO_DIR="D:/czm我的世界/.minecraft/versions/1.21-Fabric 0.15.11/saves/M
 HIGH_REPO_DIR="D:/czm我的世界/.minecraft/versions/1.21.8-Fabric 0.16.14/saves/Missile Wars 1_21_8/datapacks/Missile Wars Fusion for 1.21.8"
 
 # 输出目录
-OUTPUT_DIR="D:/czm我的世界/数据包/导弹战争/release"
+OUTPUT_DIR="D:/czm我的世界/数据包/Missile Wars/release"
 
 # 压缩格式
 ARCHIVE_FORMAT="zip"  # 可选 zip 或 tar
