@@ -4,6 +4,8 @@ function missile_royale:game/choose/remove_saves
 
 #保存玩家卡组
 
+execute if items entity @s hotbar.* minecraft:silverfish_spawn_egg run tag @s add silverfish_spawn_egg
+
 execute if items entity @s hotbar.* minecraft:snowball run tag @s add snowball
 execute if items entity @s hotbar.* minecraft:arrow run tag @s add arrow
 execute if items entity @s hotbar.* minecraft:trident run tag @s add trident

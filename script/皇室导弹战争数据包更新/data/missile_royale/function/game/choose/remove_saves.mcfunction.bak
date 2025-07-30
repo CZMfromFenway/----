@@ -23,3 +23,4 @@ tag @s remove spider_spawn_egg
 tag @s remove cave_spider_spawn_egg
 tag @s remove zombified_piglin_spawn_egg
 tag @s remove magma_cube_spawn_egg
+tag @s remove silverfish_spawn_egg

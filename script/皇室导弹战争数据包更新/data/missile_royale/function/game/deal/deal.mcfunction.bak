@@ -2,6 +2,8 @@ clear @s[team=!] #missile_royale:above/above0
 
 #分发新卡
 
+loot give @s[team=!,tag=silverfish_spawn_egg] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/silverfish_spawn_egg",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
+
 loot give @s[team=!,tag=arrow] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/arrow",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
 loot give @s[team=!,tag=ender_pearl] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/ender_pearl",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}
 loot give @s[team=!,tag=snowball] loot {pools:[{rolls:1,entries:[{type:"minecraft:loot_table",value:"missile_wars:items/snowball",functions:[{function:"reference",name:"missile_royale:cost_display"}]}]}]}

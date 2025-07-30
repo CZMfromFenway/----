@@ -1,5 +1,7 @@
 #每位玩家保留上一局游戏所用卡组
 
+give @s[tag=silverfish_spawn_egg] silverfish_spawn_egg
+
 give @s[tag=snowball] snowball
 give @s[tag=ender_pearl] ender_pearl
 give @s[tag=arrow] arrow

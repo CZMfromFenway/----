@@ -1,5 +1,7 @@
 #扣费
 
+xp add @a[team=!,scores={use.silverfish_spawn_egg=1..}] -1 levels
+
 xp add @a[team=!,scores={use.snowball=1..}] -3 levels
 xp add @a[team=!,scores={use.arrow=1..}] -1 levels
 xp add @a[team=!,scores={use.trident=1..}] -4 levels
@@ -26,6 +28,8 @@ xp add @a[team=!,scores={use.magma_cube_spawn_egg=1..}] -3 levels
 
 #发牌
 
+execute as @a[team=!,scores={use.silverfish_spawn_egg=1..}] run function missile_royale:game/deal/deal
+
 execute as @a[team=!,scores={use.snowball=1..}] run function missile_royale:game/deal/deal
 execute as @a[team=!,scores={use.arrow=1..}] run function missile_royale:game/deal/deal
 execute as @a[team=!,scores={use.trident=1..}] run function missile_royale:game/deal/deal
@@ -51,6 +55,8 @@ execute as @a[team=!,scores={use.zombified_piglin_spawn_egg=1..}] run function m
 execute as @a[team=!,scores={use.magma_cube_spawn_egg=1..}] run function missile_royale:game/deal/deal
 
 #重置道具使用变量
+
+scoreboard players reset @a[team=!] use.silverfish_spawn_egg
 
 scoreboard players reset @a[team=!] use.snowball
 scoreboard players reset @a[team=!] use.arrow

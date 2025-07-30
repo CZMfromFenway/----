@@ -17,6 +17,8 @@ title @a title [{"text": "游 戏 开 始","color": "aqua"}]
 
 #清空道具使用记录
 
+scoreboard players reset @a[team=!] use.silverfish_spawn_egg
+
 scoreboard players reset @a[team=!] use.snowball
 scoreboard players reset @a[team=!] use.arrow
 scoreboard players reset @a[team=!] use.trident

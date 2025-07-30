@@ -18,7 +18,7 @@ xp add @a[team=!,scores={use.ocelot_spawn_egg=1..}] -3 levels
 xp add @a[team=!,scores={use.wither_skeleton_spawn_egg=1..}] -7 levels
 xp add @a[team=!,scores={use.parrot_spawn_egg=1..}] -9 levels
 xp add @a[team=!,scores={use.phantom_spawn_egg=1..}] -5 levels
-xp add @a[team=!,scores={use.squid_spawn_egg=1..}] -3 levels
+xp add @a[team=!,scores={use.squid_spawn_egg=1..}] -4 levels
 
 xp add @a[team=!,scores={use.iron_golem_spawn_egg=1..}] -5 levels
 xp add @a[team=!,scores={use.spider_spawn_egg=1..}] -5 levels
