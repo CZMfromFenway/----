@@ -1,0 +1,87 @@
+升级版本时需要更新的文件地址
+
+data
+├─missile_royale（修改弓的组件，\"->","{->{,}"->}；处理tooltip）
+│  └─function
+│      └─game
+│          │  loop.mcfunction
+│          │  tp.mcfunction
+│          │
+│          └─choose
+│                  cards.mcfunction
+│
+└─missile_wars
+    ├─function
+    │  ├─game
+    │  │        loop.mcfunction（修改弓的组件，\"->","{->{,}"->}；处理tooltip）
+    │  │        over.mcfunction（修改烟花颜色，[I;...]->[...]）
+    │  │         deploy.mcfunction（'"->',"'->'）
+    │  │
+    │  ├─platform（'"->',"'->'）
+    │  │      clear.mcfunction
+    │  │      platform_2.mcfunction
+    │  │      rebuild.mcfunction
+    │  │
+    │  ├─text（处理所有的clickEvent和hoverEvent）
+    │  │      menu.mcfunction
+    │  │      settings.mcfunction
+    │  │      team.mcfunction
+    │  │      welcome.mcfunction
+    │  │
+    │  └─trigger（处理所有的clickEvent和hoverEvent）
+    │          settings.mcfunction
+    │          team.mcfunction
+    │
+    ├─item_modifier（修改hide_tooltip）
+    │  └─item
+    │          green_items.json
+    │          orange_items.json
+    │  
+    └─recipe（把[{"item":"xxx"},{...}]改为["xxx",...]）
+            dongfeng.json
+            ender_preal.json
+            hellfire.json
+            kinzhal.json
+            spectral_arrow.json
+            stielhandgranate.json
+            trident.json
+            tsar.json
+
+1.
+search:'"|"'
+replace:'
+2.
+search:        \{
+            "item": (.*)
+        \}
+replace:$1
+3.
+search:\[I;(\d+),(\d+)\]
+replace:[$1,$2]
+4.
+search:bow\[custom_name="\{\\"text\\":\\"弓\\",\\"color\\":\\"light_purple\\",\\"italic\\":false\}",lore=\["\{\\"text\\":\\"请发射箭矢以摧毁敌方导弹\\",\\"color\\":\\"gray\\",\\"italic\\":false\}"\],enchantments=\{flame:1,"missile_wars:explosive_arrow":1(.*?)\},unbreakable=\{show_in_tooltip:false\}\]
+replace:bow[custom_name={"text":"弓","color":"light_purple","italic":false},lore=[{"text":"请发射箭矢以摧毁敌方导弹","color":"gray","italic":false}],enchantments={flame:1,"missile_wars:explosive_arrow":1$1},unbreakable={},tooltip_display={hidden_components:["unbreakable"]}]
+5.
+search:
+          "can_place_on": \{
+            "predicates": \[
+              \{
+                "blocks": "#missile_wars:game_block"
+              \}
+            \],
+            "show_in_tooltip": false
+          \}
+replace:
+          "can_place_on": {
+            "blocks": "#missile_wars:game_block"
+          },
+          "tooltip_display": {
+            "hidden_components": [
+              "can_place_on"
+            ]
+          }
+6.
+search:"clickEvent":\{"action":"run_command","value"
+replace:"click_event":{"action":"run_command","command"
+search:"hoverEvent":\{"action":"show_text","contents"
+replace:"hover_event":{"action":"show_text","value"

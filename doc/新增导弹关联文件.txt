@@ -1,0 +1,75 @@
+新添加导弹时需要更新的文件地址
+
+data
+├─missile_royale
+│  ├─function
+│  │  ├─game
+│  │  │  │  tp.mcfunction
+│  │  │  │
+│  │  │  ├─choose
+│  │  │  │      previous_cards.mcfunction
+│  │  │  │      remove_saves.mcfunction
+│  │  │  │      save_cards.mcfunction
+│  │  │  │      **cards.mcfunction**
+│  │  │  │
+│  │  │  ├─cost
+│  │  │  │      remove.mcfunction
+│  │  │  │
+│  │  │  └─deal
+│  │  │          deal.mcfunction
+│  │  │
+│  │  └─initiate
+│  │          initiation.mcfunction
+│  │
+│  ├─item_modifier
+│  │      cards.json
+│  │
+│  └─tags
+│      └─item
+│          └─cost
+│                  10cost.json
+│                  1cost.json
+│                  2cost.json
+│                  3cost.json
+│                  4cost.json
+│                  5cost.json
+│                  6cost.json
+│                  7cost.json
+│                  8cost.json
+│                  9cost.json
+│
+└─missile_wars
+    ├─function
+    │  └─game
+    │          **deploy.mcfunction**
+    │
+    ├─item_modifier
+    │  ├─item
+    │  │      green_items.json
+    │  │      orange_items.json
+    │  │
+    │  └─text
+    │          help_defensive_items.json
+    │          help_missiles.json
+    │
+    └─loot_table
+        └─items
+                arrow.json
+                blaze_spawn_egg.json
+                cave_spider_spawn_egg.json
+                creeper_spawn_egg.json
+                ender_pearl.json
+                ghast_spawn_egg.json
+                guardian_spawn_egg.json
+                iron_golem_spawn_egg.json
+                magma_cube_spawn_egg.json
+                ocelot_spawn_egg.json
+                parrot_spawn_egg.json
+                snowball.json
+                spectral_arrow.json
+                spider_spawn_egg.json
+                squid_spawn_egg.json
+                trident.json
+                witch_spawn_egg.json
+                wither_skeleton_spawn_egg.json
+                zombified_piglin_spawn_egg.json

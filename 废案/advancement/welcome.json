@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "welcome":{
+            "trigger": "impossible"
+        }
+    },
+    "display": {
+        "show_toast": true,
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:paper"
+        },
+        "frame": "task",
+        "description": {
+            "text":"查看菜单"
+        },
+        "title": ["用",{"text":"/","color":"gray"},{"text":"trigger","color":"light_purple"}," ",{"text":"menu","color":"aqua"},"来查看菜单"],
+        "announce_to_chat": false
+    },
+    "parent": "missile_wars:game"
+}

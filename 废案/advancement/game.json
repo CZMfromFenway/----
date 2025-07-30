@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "welcome":{
+            "trigger": "impossible"
+        }
+    },
+    "display": {
+        "show_toast": false,
+        "hidden": false,
+        "icon": {
+            "id": "minecraft:slime_block"
+        },
+        "frame": "task",
+        "description": {
+            "text":"发动你的导弹战争吧！"
+        },
+        "title": ["Missile Wars: Royal Fusion"],
+        "announce_to_chat": false,
+        "background": "minecraft:textures/block/netherite_block.png"
+    }
+}

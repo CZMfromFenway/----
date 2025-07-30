@@ -1,0 +1,6 @@
+/release/
+*.zip
+*.tar.gz
+*.lnk
+*.code-workspace
+.vscode
