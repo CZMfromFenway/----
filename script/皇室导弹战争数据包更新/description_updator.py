@@ -666,6 +666,28 @@ CONFIG = [
                     ]
                 },
                 "insert_on_missing": False  # 不插入新道具
+            },
+            {
+                "description": "特殊处理三叉戟",
+                "condition": {"物品代号": "trident"},  # 只处理三叉戟道具
+                "target_path": "",  # 根数组
+                "match_path": "item_filter.items",  # 匹配路径
+                "match_value": "{物品代号}",  # 匹配值
+                "update_template": {
+                    "modifier": [
+                        {},
+                        {},
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "enchantments": {
+                                    "missile_wars:platform_trident": 1
+                                }
+                            }
+                        }
+                    ]
+                },
+                "insert_on_missing": False  # 不插入新道具
             }
         ]
     },
@@ -801,6 +823,28 @@ CONFIG = [
                                 }
                                 }
                             }
+                    ]
+                },
+                "insert_on_missing": False  # 不插入新道具
+            },
+            {
+                "description": "特殊处理三叉戟",
+                "condition": {"物品代号": "trident"},  # 只处理三叉戟道具
+                "target_path": "",  # 根数组
+                "match_path": "item_filter.items",  # 匹配路径
+                "match_value": "{物品代号}",  # 匹配值
+                "update_template": {
+                    "modifier": [
+                        {},
+                        {},
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "enchantments": {
+                                    "missile_wars:platform_trident": 1
+                                }
+                            }
+                        }
                     ]
                 },
                 "insert_on_missing": False  # 不插入新道具
