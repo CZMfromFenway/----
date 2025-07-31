@@ -98,7 +98,7 @@ class FileSorter:
                 "start_regex": r"#分发新卡",
                 "end_regex": r"clear @s\[team=!,level=0\] #missile_royale:above/above0",
                 "item_regex": r"loot give @s\[team=!,tag=(\w*)\] loot \{[\S]*",
-                "sort_by": ["类型", "费用"],  # 先按类型排序，再按费用排序
+                "sort_by": ["类型", "费用", "物品代号"],  # 先按类型排序，再按费用排序
                 "sort_order": "desc",  # 降序排序
                 "backup": True
             },
@@ -108,7 +108,7 @@ class FileSorter:
                 "start_regex": r"#每位玩家保留上一局游戏所用卡组",
                 "end_regex": r"item modify entity @s hotbar\.1 missile_royale:cards",
                 "item_regex": r"give @s\[tag=(\w*)\] \w*",
-                "sort_by": ["类型", "费用"],  # 先按类型排序，再按费用排序
+                "sort_by": ["类型", "费用", "物品代号"],  # 先按类型排序，再按费用排序
                 "sort_order": "desc",  # 降序排序
                 "backup": True
             }
