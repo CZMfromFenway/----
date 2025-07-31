@@ -13,7 +13,7 @@ data
 │  │  │  │      **cards.mcfunction**
 │  │  │  │
 │  │  │  ├─cost
-│  │  │  │      remove.mcfunction
+│  │  │  │      remove.mcfunction（与费用有关）
 │  │  │  │
 │  │  │  └─deal
 │  │  │          deal.mcfunction
@@ -26,7 +26,7 @@ data
 │  │
 │  └─tags
 │      └─item
-│          └─cost
+│          └─cost（与费用有关）
 │                  10cost.json
 │                  1cost.json
 │                  2cost.json
@@ -48,7 +48,7 @@ data
     │  │      green_items.json
     │  │      orange_items.json
     │  │
-    │  └─text
+    │  └─text（与费用有关）
     │          help_defensive_items.json
     │          help_missiles.json
     │
@@ -73,3 +73,23 @@ data
                 witch_spawn_egg.json
                 wither_skeleton_spawn_egg.json
                 zombified_piglin_spawn_egg.json
+
+book_updator.py: 
+    help_defensive_items.json
+    help_missiles.json
+
+cost_updator.py:
+    remove.mcfunction
+    remove_saves.mcfunction
+    initiation.mcfunction
+    save_cards.mcfunction
+    previous_cards.mcfunction
+    deal.mcfunction
+    tp.mcfunction
+    loot_table/items/
+    cost/
+
+description_updator.py:
+    cards.json
+    green_items.json
+    orange_items.json
