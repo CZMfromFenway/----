@@ -8,6 +8,6 @@
 *Missile Wars: Royale Fusion* Datapack Introduction
 ==
 
-*Missile Wars: Royale Fusion* is a **PvP** datapack adapted from the mini-game map *Missile Wars* by **Cubehamster** et al.(2015). This adaption reproduces the 5 classic missiles in the original work and adds 9 self-designed missiles. It also features a fusion system and the royal mode which imitates *Clash Royale*. 
+*Missile Wars: Royale Fusion* is a datapack that recreates and modifies the classic PvP mini-game *Missile Wars*, originally created by Cubehamster and others in Minecraft 1.8. This version retains the original five missiles while introducing nine new missiles developed independently, along with a fusion system and a Royale mode inspired by *Clash Royale*. Players are divided into two sides to deploy missiles with the goal of destroying the enemy's platform and the nether portal behind. In Royale mode, players can choose various "spells" and missiles, consuming elixir to organize attacks and defenses.
 
-This repository includes related documents (including installment manual and a guidebook), related scripts and the link to the scoure code. To download the pack, please turn to the **release** column.
+This repository contains relevant documentation (including installation and gameplay instructions), scripts, and source code links. To download the datapack, please visit the "releases" section.
