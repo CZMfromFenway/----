@@ -104,6 +104,10 @@ class BookModifierUpdater:
         
         modified = False
         
+        # 创建待删除页面索引集合和待添加页面列表
+        pages_to_delete = set()
+        new_pages_to_add = []
+        
         # 处理每个规则
         for rule in config['rules']:
             # 筛选符合条件的道具
@@ -117,98 +121,60 @@ class BookModifierUpdater:
             print(f"  应用规则: {rule.get('description', '')}")
             print(f"  符合条件道具数: {len(filtered_items)}")
             
-            # 处理每个符合条件的道具
+            # 第一阶段：收集需要删除的页面
             for item in filtered_items:
-                # 获取匹配值（名称）
                 match_value = self.replace_placeholders(rule['match_value'], item)
                 found = False
                 
                 # 遍历所有页面
                 for page_index, page in enumerate(data['pages']):
+                    if page_index in pages_to_delete:  # 跳过已标记删除的页面
+                        continue
                     if not isinstance(page, list):
                         continue
                     
                     # 在页面中查找道具代号
-                    code_index = -1
-                    for i, element in enumerate(page):
+                    for element in page:
                         if isinstance(element, dict) and element.get('text') == match_value:
-                            code_index = i
+                            pages_to_delete.add(page_index)
+                            print(f"    🔍 在页面 {page_index} 找到道具: {match_value}，标记为删除")
+                            found = True
                             break
-                    
-                    if code_index == -1:
-                        continue
-                    
-                    # 找到道具代号位置，更新整个页面
-                    print(f"    🔍 在页面 {page_index} 找到道具: {match_value}")
-                    
-                    # 生成新页面内容
-                    new_page = []
-                    for element in rule['page_template']:
-                        if isinstance(element, str):
-                            # 处理字符串元素
-                            new_page.append(self.replace_placeholders(element, item))
-                        elif isinstance(element, dict):
-                            # 处理文本对象元素
-                            new_element = copy.deepcopy(element)
-                            self.update_text_object(new_element, item)
-                            new_page.append(new_element)
-                        else:
-                            # 其他类型直接复制
-                            new_page.append(copy.deepcopy(element))
-                    
-                    # 替换原页面
-                    data['pages'][page_index] = new_page
-                    print(f"    ✅ 更新页面内容")
-                    modified = True
-                    found = True
-                    break
+                    if found:
+                        break
+            
+            # 第二阶段：生成新页面内容
+            for item in filtered_items:
+                # 生成新页面
+                new_page = []
+                for element in rule['page_template']:
+                    if isinstance(element, str):
+                        new_page.append(self.replace_placeholders(element, item))
+                    elif isinstance(element, dict):
+                        new_element = copy.deepcopy(element)
+                        self.update_text_object(new_element, item)
+                        new_page.append(new_element)
+                    else:
+                        new_page.append(copy.deepcopy(element))
                 
-                # 未找到时的插入逻辑
-                if not found and rule.get('insert_on_missing', True):
-                    # 生成新页面
-                    new_page = []
-                    for element in rule['page_template']:
-                        if isinstance(element, str):
-                            new_page.append(self.replace_placeholders(element, item))
-                        elif isinstance(element, dict):
-                            new_element = copy.deepcopy(element)
-                            self.update_text_object(new_element, item)
-                            new_page.append(new_element)
-                        else:
-                            new_page.append(copy.deepcopy(element))
-                    
-                    # 设置插入位置
-                    insert_position = rule.get('insert_position', 'end')
-                    insert_index = len(data['pages'])  # 默认插入末尾
-                    
-                    if insert_position == 'start':
-                        insert_index = 0
-                    elif isinstance(insert_position, int):
-                        insert_index = min(max(insert_position, 0), len(data['pages']))
-                    elif rule.get('insert_after') or rule.get('insert_before'):
-                        # 查找参考道具页面
-                        ref_value = rule.get('insert_after') or rule.get('insert_before')
-                        ref_index = -1
-                        for j, page in enumerate(data['pages']):
-                            if not isinstance(page, list):
-                                continue
-                            for element in page:
-                                if isinstance(element, dict) and element.get('text') == ref_value:
-                                    ref_index = j
-                                    break
-                            if ref_index >= 0:
-                                break
-                        
-                        if ref_index >= 0:
-                            if rule.get('insert_after'):
-                                insert_index = ref_index + 1
-                            else:
-                                insert_index = ref_index
-                    
-                    # 插入新页面
-                    data['pages'].insert(insert_index, new_page)
-                    print(f"    ➕ 在位置 {insert_index} 添加新页面: {item.get('名称', '?')}")
-                    modified = True
+                # 添加到新页面列表
+                new_pages_to_add.append(new_page)
+                print(f"    ➕ 生成新页面: {item.get('名称', '?')}")
+        
+        # 执行删除操作（按索引从大到小删除）
+        if pages_to_delete:
+            sorted_indices = sorted(pages_to_delete, reverse=True)
+            for idx in sorted_indices:
+                if idx < len(data['pages']):
+                    del data['pages'][idx]
+            print(f"    🗑️ 已删除 {len(pages_to_delete)} 个旧页面")
+            modified = True
+        
+        # 添加新页面（统一添加到文件末尾）
+        if new_pages_to_add:
+            data['pages'].extend(new_pages_to_add)
+            print(f"    📥 已添加 {len(new_pages_to_add)} 个新页面")
+            modified = True
         
         # 如果有修改则写回文件
         if modified:
